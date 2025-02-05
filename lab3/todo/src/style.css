@@ -1,0 +1,98 @@
+* {
+  font-family: Roboto, sans-serif;
+  --container-width: 1150px;
+  transition: .3s ease;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  background-color: rgb(0, 119, 255);
+  padding: 0 50px;
+}
+.header__title{
+  font-size: 30px;
+  color: white;
+  padding: 15px 0;
+}
+.header__container{
+  max-width: var(--container-width);
+  margin: 0px auto;
+}
+
+.main{
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 0 50px;
+}
+
+.main__input{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.main__input input {
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-right: 15px;
+  border-radius: 10px;
+  border: 1px solid #adadad;
+}
+
+.main__input input:focus,
+.main__input input:not(:placeholder-shown){
+  background-color: rgb(229, 229, 229);
+}
+
+.main__btn{
+  padding: 0 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(0, 119, 255);
+  color: white;
+}
+.main__btn:hover{
+  background-color: rgb(57, 149, 255);
+  cursor: pointer;
+}
+
+.main__box-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #adadad;
+  margin: 15px 0;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+.main__box-item:hover{
+  background-color: rgb(229, 229, 229);
+}
+
+.main__box-item__content{
+  display: flex;
+  gap: 15px;
+}
+
+.main__box-item button{
+  background: none;
+  border: none;
+}
+.main__box-item svg{
+  transition: 0s ease;
+}
+
+.main__box-item svg:hover{
+  color: red;
+  cursor: pointer;
+
+}
+
+.done {
+  text-decoration: line-through;
+}
