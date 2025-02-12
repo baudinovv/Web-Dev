@@ -12,7 +12,7 @@ addInput.addEventListener("keypress", function(event) {
 });
 
 function addTask(){
-  let content = addInput.value
+  let content = addInput.value;
   let task = document.createElement('div');
   task.className = "main__box-item";
   task.innerHTML = `
