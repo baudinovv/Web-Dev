@@ -10,7 +10,7 @@ import { Card } from '../card';
       <div class="card__container">
         <div class="card__top">
           <a class="card__picture" [href]="card.link">
-            <img [src]="card.img" alt="#">
+            <img [src]="card.img " alt="#">
           </a>
           <hr>
           <a class="card__title" [href]="card.link">{{ card.title }}</a>

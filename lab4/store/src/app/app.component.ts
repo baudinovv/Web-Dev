@@ -9,7 +9,7 @@ import { CardComponent } from './card/card.component';
   template: `
     <header class="header">
       <div class="header-container container">
-        <img src="https://kaspi.kz/img/Logo.svg" alt="">
+        <img src="https://kaspi.kz/img/Logo.svg" alt="Kaspi logo">
       </div>
     </header>
     <main>
