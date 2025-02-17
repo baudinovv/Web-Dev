@@ -1,0 +1,20 @@
+.category{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px
+}
+
+.category__item{
+  padding: 25px;
+  border: 1px solid red;
+  border-radius: 15px;
+  width: 25%;
+  text-align: center;
+}
+
+.category__item:hover{
+  background-color: red;
+  color: white;
+  transition: all .3s ease;
+  cursor: pointer;
+}
