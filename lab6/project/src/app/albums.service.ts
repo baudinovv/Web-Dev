@@ -3,6 +3,7 @@ import  { HttpClient } from "@angular/common/http"
 import { type Observable, of } from "rxjs"
 import { tap } from "rxjs/operators"
 import type { Albums } from "./albums"
+import { Photos } from "./photos"
 
 @Injectable({
   providedIn: "root",
@@ -37,6 +38,9 @@ export class AlbumsService {
         this.saveAlbumsToStorage()
       }),
     )
+  }
+  getPhoto(id: number): Observable<Photos[]> {
+    return this.http.get<Photos[]>(`https://jsonplaceholder.typicode.com/albums/${id}/photos`);
   }
 
   findAlbumByIdHttp(id: string): Observable<Albums> {

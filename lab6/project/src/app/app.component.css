@@ -10,12 +10,20 @@ main{
   max-width: 1125px;
   margin: 0px auto;
 }
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .menu{
   display: flex;
   justify-content: center;
   gap: 30px;
   border-bottom: 1px solid black;
 }
+
 
 .menu__item{
   text-decoration: none;

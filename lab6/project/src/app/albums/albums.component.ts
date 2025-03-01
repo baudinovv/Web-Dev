@@ -9,7 +9,7 @@ import { RouterModule } from "@angular/router"
   imports: [CommonModule, RouterModule],
   standalone: true,
   template: `
-    <div class="albums">
+    <div class="albums container">
       <div class="albums__item" *ngFor="let item of albums" [routerLink]="['/albums', item.id]" >
         <div class="albums__item-title"> {{ item.title }} </div>
       </div>
