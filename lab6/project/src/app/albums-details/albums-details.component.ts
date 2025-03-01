@@ -59,7 +59,7 @@ export class AlbumsDetailsComponent implements OnInit {
   }
 
   delete(): void {
-    const id = Number()
+    const id = this.pageId;
     this.albumsService.deleteAlbumById(id).subscribe(() => {
       this.router.navigate(["/albums"])
     })
