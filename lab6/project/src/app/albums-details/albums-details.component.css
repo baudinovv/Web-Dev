@@ -1,0 +1,53 @@
+
+
+.details__card-container{
+  max-width: 800px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.details__card input{
+  outline: none;
+  font-size: 25px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.228);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  transition: all .3s ease;
+}
+.details__card input:focus{
+  border-bottom: 2px solid black;
+}
+.details__btns{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.details__btns button {
+  background: none;
+  outline: none;
+  font-size: 20px;
+  padding: 15px 25px;
+  width: 50%;
+  border-radius: 10px;
+  transition: all .3s ease;
+}
+
+.details__btns-save{
+  color: green;
+  border: 1px solid green;
+}
+.details__btns-delete{
+  color: red;
+  border: 1px solid red;
+}
+.details__btns-save:hover {
+  background-color: rgb(152, 188, 152);
+}
+.details__btns-delete:hover {
+  background-color: red;
+}
