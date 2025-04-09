@@ -1,0 +1,23 @@
+<div class="main-container">
+  <div class="right-container">
+    <h1 class="company-title">Компании</h1>
+    <fieldset class="new-company-fieldset">
+      <label>Название компании:</label>
+      <input type="text" [(ngModel)]="newCompany" placeholder="headhunter">
+      <button (click)="addCompany()">Добавить</button>
+    </fieldset>
+    <ul class="company-list">
+      <li *ngFor="let company of companies">
+        <div class="company-top">
+          <a routerLink="{{company.id}}/vacancies" class="company-name">{{company.name}}</a> 
+          <button (click)="deleteCompany(company.id)" class="delete-btn">Удалить</button> 
+        </div>
+        <fieldset class="update-fieldset">
+          <label>Новое название компании:</label>
+          <input type="text" id="{{company.id}}" [(ngModel)]="newName" placeholder="...">
+          <button (click)="updateCompany(company.id)" class="update-btn">Обновить</button>
+        </fieldset>
+      </li>
+    </ul>
+  </div>
+</div>

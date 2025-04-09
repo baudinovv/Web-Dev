@@ -1,0 +1,28 @@
+<div class="main-container">
+  <div class="right-container">
+    <h1 class="vacancy-title">Вакансии</h1>
+    <fieldset class="new-vacancy-fieldset">
+      <label>Название вакансии:</label>
+      <input type="text" [(ngModel)]="newVacancy" placeholder="Разработчик">
+      <button (click)="addVacancy()">Добавить</button>
+    </fieldset>
+    <div *ngIf="vacancies.length != 0">
+      <ul class="vacancy-list">
+        <li *ngFor="let vacancy of vacancies">
+          <div class="vacancy-top">
+            <p class="vacancy-name">{{vacancy.name}}</p>
+            <button (click)="deleteVacancy(vacancy.id)" class="delete-btn">Удалить</button>
+          </div>
+          <fieldset class="update-fieldset">
+            <label>Новое название вакансии:</label>
+            <input type="text" [(ngModel)]="newName" placeholder="...">
+            <button (click)="updateVacancy(vacancy.id)" class="update-btn">Обновить</button>
+          </fieldset>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="vacancies.length == 0">
+      <h1>No vacancies</h1>
+    </div>
+  </div>
+</div>
